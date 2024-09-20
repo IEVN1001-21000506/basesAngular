@@ -18,35 +18,35 @@ export class ProductListComponent {
   productos: any[] = [
       {
           "productoId": 1,
-          "modelo": "sentra",
-          "descripcion": "2 puertas",
-          "year": "marzo 12 2021",
-          "precio": 120000,
-          "marca": "nisan",
-          "color": "blanco",
-          "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcBB5_JDrpahQJzQ4Y6U0HwfHS1wFHdUZ74w&s"
+          "modelo": "rubicon",
+          "descripcion": "4 puertas",
+          "year": "enero 15 2024",
+          "precio": 1200000,
+          "marca": "jeep",
+          "color": "negro",
+          "imgUrl": "https://img.remediosdigitales.com/511ec0/jeep-r-wrangler-unlimited-rubicon-edicion-deluxe-2020_2-1-/1366_2000.jpg"
       
       },
       {
           "productoId": 2,
-          "modelo": "a4",
-          "descripcion": "2 puertas",
-          "year": "marzo 12 2021",
-          "precio": 130000,
+          "modelo": "vento",
+          "descripcion": "4 puertas",
+          "year": "mayo 2 2020",
+          "precio": 180000,
           "marca": "volsvagen",
-          "color": "blanco",
-          "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg3hro7olm8DX8_jWsGyn0Aau9cxi73h7r-w&s"
+          "color": "azul",
+          "imgUrl": "https://img.remediosdigitales.com/6f6fdc/volkswagen-vento-allstar-2017-mexico-2-/1366_2000.jpg"
       
       },
       {
           "productoId": 3,
-          "modelo": "a5",
-          "descripcion": "2 puertas",
+          "modelo": "tsuru",
+          "descripcion": "4 puertas",
           "year": "marzo 12 2021",
-          "precio": 150000,
-          "marca": "chevrolet",
+          "precio": 30000,
+          "marca": "nissan",
           "color": "blanco",
-          "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHz_1KZ194hzPMoqOCcN9rx4VnCm7OwkpLJQ&s"
+          "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgEP_vIKAg18pDQ8OTBGyMWgeKJGlqshvs0A&s"
       
       },
       
