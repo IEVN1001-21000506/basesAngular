@@ -20,7 +20,7 @@ export class ProductListComponent {
           "productoId": 1,
           "modelo": "rubicon",
           "descripcion": "4 puertas",
-          "year": "enero 15 2024",
+          "year": "enero 15 2020",
           "precio": 1200000,
           "marca": "jeep",
           "color": "negro",
