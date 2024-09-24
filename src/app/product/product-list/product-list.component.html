@@ -56,12 +56,12 @@ lista de productos
             filtrar:
         </div>
         <div>
-            <input type="text" class="from-control" name="filter">
+            <input type="text" [(ngModel)]="listFiter" class="from-control" name="filter">
         </div>
     </div>
     <div class="row">
         <div class="col-md-6">
-            <h3>Filtro:</h3>
+            <h3>Filtro: {{listFiter}}</h3>
         </div>
     </div>
     <div class="table-responsive">
@@ -70,7 +70,7 @@ lista de productos
                 <tr>
                     <th>
                         <button (click)="mostrarImagen()" class="btn btn-primary"
-                        type="button">imagen</button>
+                        type="button">{{muestraImg?'Ocultar ':'Muestra '}}imagen</button>
                     </th>
                     <th>modelo</th>
                     <th>descripcion</th>
@@ -81,20 +81,21 @@ lista de productos
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let producto of productos">
-                    <td>
-                        <img [src]="producto.imgUrl"
-                        [title]="producto.modelo"
+                <tr *ngFor="let producto of productos | productoFilter:listFiter">
+
+                    <td *ngIf="muestraImg">
+                        <img [src]="producto.ImgUrl"
+                        [title]="producto.Modelo"
                         [style.width.px]="imageWith"
                         [style.margin.px]="imageMargin">
                     </td>
 
-                    <td>{{producto.modelo}}</td>
-                    <td>{{producto.descripcion}}</td>
-                    <td>{{producto.year|date}}</td>
-                    <td>{{producto.precio|currency}}</td>
-                    <td>{{producto.marca}}</td>
-                    <td>{{producto.color}}</td>
+                    <td>{{producto.Modelo}}</td>
+                    <td>{{producto.Descripcion}}</td>
+                    <td>{{producto.Year|date}}</td>
+                    <td>{{producto.Precio|currency}}</td>
+                    <td>{{producto.Marca}}</td>
+                    <td>{{producto.Color}}</td>
                 </tr>
             </tbody>
         </table>
